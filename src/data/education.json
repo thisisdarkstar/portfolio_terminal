@@ -1,0 +1,25 @@
+[
+  {
+    "degree": "Diploma In Cybernatics",
+    "school": "ASD Academy",
+    "period": "Jul 2023 - Dec 2024",
+    "credential": "https://drive.google.com/file/d/1SI0d1hJ9u1JhuX5SWGsqyjUq0lCnLxHf/view?usp=sharing",
+    "details": [
+      "Basic Networking: Learned networking fundamentals, including protocols and IP configuration",
+      "Web Development: Built responsive websites using HTML, CSS, JavaScript, and frameworks like React",
+      "Android Development: Developed Android apps with Java and Kotlin, focusing on performance and UX",
+      "CEH: Gained skills in ethical hacking and penetration testing using industry tools",
+      "VAPT: Conducted security assessments and penetration tests to identify and fix vulnerabilities"
+    ]
+  },
+  {
+    "degree": "Higher Secondary Education",
+    "school": "Godapiasal M.G.M High School",
+    "period": "Jan 2019 - June 2020",
+    "details": [
+      "Completed high school with a focus on STEAM subjects",
+      "Strong foundation in Mathematics, Chemistry, Physics, and Biology",
+      "Developed analytical and scientific skills"
+    ]
+  }
+]

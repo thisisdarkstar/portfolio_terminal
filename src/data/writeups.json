@@ -1,0 +1,98 @@
+[
+  {
+    "title": "Static Android Testing Checklist",
+    "description": "A checklist for static analysis of Android applications.",
+    "details": [
+      "Covers manifest, code, and resource checks",
+      "Helps ensure secure Android app development"
+    ],
+    "preview": "https://image.thum.io/get/width/1000/crop/1920/https://github.com/thisisdarkstar/Static-Android-Testing-Checklist",
+    "links": [
+      { "label": "GitHub", "url": "https://github.com/thisisdarkstar/Static-Android-Testing-Checklist" }
+    ]
+  },
+  {
+    "title": "SSL Pinning Android",
+    "description": "Write-up on SSL pinning techniques and bypass for Android apps.",
+    "details": [
+      "Explains SSL pinning concepts",
+      "Shows methods for bypassing SSL pinning"
+    ],
+    "preview": "https://image.thum.io/get/width/1000/crop/1920/https://github.com/thisisdarkstar/SSL-Pinning-Android",
+    "links": [
+      { "label": "GitHub", "url": "https://github.com/thisisdarkstar/SSL-Pinning-Android" }
+    ]
+  },
+  {
+    "title": "Red TryHackMe",
+    "description": "Walkthrough and notes for the Red room on TryHackMe.",
+    "details": [
+      "Step-by-step exploitation process",
+      "Key takeaways and commands"
+    ],
+    "preview": "https://image.thum.io/get/width/1000/crop/1920/https://github.com/thisisdarkstar/Red-TryHackMe",
+    "links": [
+      { "label": "GitHub", "url": "https://github.com/thisisdarkstar/Red-TryHackMe" }
+    ]
+  },
+  {
+    "title": "TryHack3M Bricks Heist",
+    "description": "Write-up for the Bricks Heist challenge on TryHackMe.",
+    "details": [
+      "Challenge overview and solution steps",
+      "Screenshots and explanations"
+    ],
+    "preview": "https://image.thum.io/get/width/1000/crop/1920/https://github.com/thisisdarkstar/TryHack3M-Bricks-Heist",
+    "links": [
+      { "label": "GitHub", "url": "https://github.com/thisisdarkstar/TryHack3M-Bricks-Heist" }
+    ]
+  },
+  {
+    "title": "Passive Reconnaissance TryHackMe",
+    "description": "Notes and walkthrough for Passive Reconnaissance on TryHackMe.",
+    "details": [
+      "Passive recon techniques",
+      "Tools and commands used"
+    ],
+    "preview": "https://image.thum.io/get/width/1000/crop/1920/https://github.com/thisisdarkstar/Passive-Reconnaissance-TryHackMe",
+    "links": [
+      { "label": "GitHub", "url": "https://github.com/thisisdarkstar/Passive-Reconnaissance-TryHackMe" }
+    ]
+  },
+  {
+    "title": "Web Application Basic THM",
+    "description": "Basic web application security concepts and TryHackMe walkthrough.",
+    "details": [
+      "Covers common web vulnerabilities",
+      "Hands-on lab solutions"
+    ],
+    "preview": "https://image.thum.io/get/width/1000/crop/1920/https://github.com/thisisdarkstar/Web-Application-Basic-THM",
+    "links": [
+      { "label": "GitHub", "url": "https://github.com/thisisdarkstar/Web-Application-Basic-THM" }
+    ]
+  },
+  {
+    "title": "Shell Color Codes",
+    "description": "Reference for shell color codes and their usage in scripts.",
+    "details": [
+      "List of color codes",
+      "Examples for colored output"
+    ],
+    "preview": "https://image.thum.io/get/width/1000/crop/1920/https://github.com/thisisdarkstar/Shell-Color-Codes",
+    "links": [
+      { "label": "GitHub", "url": "https://github.com/thisisdarkstar/Shell-Color-Codes" }
+    ]
+  },
+  {
+    "title": "Hospitality Challenges Without NOC",
+    "description": "Write-up for Hospitality challenges without NOC.",
+    "details": [
+      "Challenge descriptions and solutions",
+      "Techniques and tools used"
+    ],
+    "preview": "https://image.thum.io/get/width/1000/crop/1920/https://github.com/thisisdarkstar/Hospitality-Challanges-Without-NOC",
+    "links": [
+      { "label": "GitHub", "url": "https://github.com/thisisdarkstar/Hospitality-Challanges-Without-NOC" }
+    ]
+  }
+]

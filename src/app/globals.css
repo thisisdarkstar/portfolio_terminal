@@ -1,0 +1,115 @@
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background: #0a0e1a;
+}
+
+body {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom scrollbar */
+.terminal-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+.terminal-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.terminal-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(100, 116, 139, 0.4);
+  border-radius: 3px;
+}
+.terminal-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 116, 139, 0.7);
+}
+
+/* Blinking cursor */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+.cursor-blink {
+  animation: blink 1s step-end infinite;
+}
+
+/* Fade in animation for command outputs */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-fade-in {
+  animation: fade-in 0.25s ease-out forwards;
+}
+
+/* Terminal CRT glow (dark mode) */
+.terminal-glow {
+  text-shadow: 0 0 8px rgba(74, 222, 128, 0.4);
+}
+
+/* Skill bar animation */
+@keyframes grow-bar {
+  from { width: 0%; }
+}
+.skill-bar-fill {
+  animation: grow-bar 0.8s ease-out forwards;
+}
+
+/* Light theme overrides */
+.theme-light body {
+  background: #f8fafc;
+}
+
+/* Command output wrapper spacing */
+.co-wrap {
+  padding-left: 0.75rem;
+  padding-right: 0.5rem;
+}
+@media (min-width: 768px) {
+  .co-wrap {
+    padding-left: 1rem;
+    padding-right: 0.75rem;
+  }
+}
+
+/* Wallpaper background */
+.wallpaper-bg {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(88,166,255,0.15), transparent 35%),
+    radial-gradient(circle at 80% 30%, rgba(82,209,138,0.14), transparent 35%),
+    radial-gradient(circle at 50% 80%, rgba(99,102,241,0.14), transparent 32%),
+    linear-gradient(145deg, #05070f 0%, #0b1224 45%, #0e152a 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.wallpaper-bg::after {
+  content: "DARKSTAR";
+  position: fixed;
+  right: 4vw;
+  bottom: 5vh;
+  font-size: clamp(32px, 9vw, 120px);
+  font-weight: 900;
+  letter-spacing: 0.28em;
+  color: rgba(255, 255, 255, 0.06);
+  text-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  pointer-events: none;
+  user-select: none;
+}
