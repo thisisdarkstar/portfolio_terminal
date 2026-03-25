@@ -192,7 +192,7 @@ export default function Terminal() {
       document.removeEventListener("pointermove", handleHeaderPointerMove);
       document.removeEventListener("pointerup", handleHeaderPointerUp);
     };
-  });
+  }, []);
 
   const bg = isDark
     ? "bg-gradient-to-br from-[#050914] via-[#0b1224] to-[#0d1320]"
