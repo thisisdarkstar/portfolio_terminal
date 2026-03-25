@@ -40,7 +40,7 @@ function Help({ isDark }) {
     ["clear",      "Clear the terminal"],
   ];
   return (
-    <div className={c.text}>
+    <div className={c.text} style={{ marginTop: 4, marginBottom: 6 }}>
       <p className={cx(c.muted, "mb-2 text-xs")}>Usage: &lt;command&gt;</p>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-1">
         {cmds.map(([cmd, desc]) => (
@@ -58,12 +58,12 @@ function About({ isDark }) {
   const c = t(isDark);
   return (
     <div className="space-y-5">
-      <div className={cx("border-l-2 pl-6", isDark ? "border-[#4ade80]" : "border-green-500")}>
+      <div style={{ marginTop: 4 }}>
         <p className={cx(c.text, "leading-relaxed")}>{aboutData.summary}</p>
       </div>
       <div>
-        <p className={cx(c.accent, "font-semibold mb-2")}>✦ Core Expertise</p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-1">
+        <p className={cx(c.accent, "font-semibold mb-2")} style={{ marginTop: 4 }} >✦ Core Expertise</p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-1" style={{ paddingLeft: 10, paddingRight: 10, marginBottom: 8 }}>
           {aboutData.expertise.map((item, i) => (
             <div key={i} className={cx("flex items-start gap-2", c.text)}>
               <span className={c.green}>▹</span>
@@ -116,12 +116,12 @@ function Projects({ isDark }) {
     <div className="space-y-8">
       {Object.entries(projectsData).map(([category, projects]) => (
         <div key={category}>
-          <div className={cx("text-xs uppercase tracking-widest mb-3 pb-1 border-b", c.yellow, c.divider)}>
+          <div className={cx("text-xs uppercase tracking-widest mb-3 pb-1 border-b", c.yellow, c.divider)} style={{ marginTop: 10 }}>
             {category}
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-5">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-2">
             {projects.map((proj, j) => (
-              <div key={j} className={cx("border rounded-lg p-5 hover:scale-[1.01] transition-transform", c.card)}>
+              <div key={j} className={cx("border rounded-lg p-5 hover:scale-[1.01] transition-transform", c.card)} style={{ padding: 6 }}>
                 <h4 className={cx(c.green, "font-semibold mb-1")}>{proj.title}</h4>
                 <p className={cx(c.muted, "text-xs mb-2")}>{proj.description}</p>
                 <div className="flex flex-wrap gap-1 mb-3">
@@ -169,7 +169,7 @@ function Projects({ isDark }) {
 function Skills({ isDark }) {
   const c = t(isDark);
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-7">
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-7" style={{ marginTop: 8, marginBottom: 8 }}>
       {skillsData.map((cat, i) => (
         <div key={i}>
           <div className={cx(c.yellow, "text-xs uppercase tracking-widest mb-2")}>{cat.title}</div>
@@ -200,7 +200,7 @@ function Education({ isDark }) {
   return (
     <div className="space-y-5">
       {educationData.map((edu, i) => (
-        <div key={i} className={cx("border rounded-lg p-5", c.card)}>
+        <div key={i} className={cx("border rounded-lg p-5", c.card)} style={{ padding: 6 }}>
           <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 mb-1">
             <span className={cx(c.accent, "font-bold")}>{edu.degree}</span>
             <span className={cx(c.muted, "text-xs")}>{edu.period}</span>
@@ -232,9 +232,9 @@ function Education({ isDark }) {
 function Writeups({ isDark }) {
   const c = t(isDark);
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-5">
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-2" style={{ marginTop: 6, marginBottom: 6 }}>
       {writeupsData.map((w, i) => (
-        <div key={i} className={cx("border rounded-lg p-5 hover:scale-[1.01] transition-transform", c.card)}>
+        <div key={i} className={cx("border rounded-lg p-5 hover:scale-[1.01] transition-transform", c.card)} style={{ padding: 6 }}>
           <h4 className={cx(c.accent, "font-semibold mb-1 text-sm")}>{w.title}</h4>
           <p className={cx(c.muted, "text-xs mb-2")}>{w.description}</p>
           <ul className="space-y-0.5 mb-3">

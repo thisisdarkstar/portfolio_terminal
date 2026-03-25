@@ -51,7 +51,7 @@ export default function TerminalHeader({
       </div>
 
       <div className={`flex-1 text-center text-xs ${barTitle} tracking-widest`}>
-        {promptHost}:{promptPath} — zsh — {termSize.cols}×{termSize.rows}
+        {promptHost}:{promptPath} — zsh — {termSize.cols}x{termSize.rows}
       </div>
 
       <button

@@ -23,7 +23,7 @@ export default function TerminalBody({
     <div
       ref={bodyRef}
       className={`relative p-6 md:p-8 overflow-y-auto terminal-scrollbar font-mono text-sm ${textColor}`}
-      style={{ height: bodyHeight, overflow: "auto", visibility: isMinimized ? "hidden" : "visible" }}
+      style={{ height: bodyHeight, overflow: "auto", visibility: isMinimized ? "hidden" : "visible", padding: "10px 0" }}
     >
       <span
         ref={measureRef}

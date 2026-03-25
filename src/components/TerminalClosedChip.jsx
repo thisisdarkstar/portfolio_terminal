@@ -1,6 +1,9 @@
 import React from "react";
+import Image from "next/image";
 
 export default function TerminalClosedChip({ bg, isDark, iconSrc, onReopen }) {
+  const finalIconSrc = iconSrc || "/default-terminal-icon.png";
+
   return (
     <div className={`min-h-screen ${bg} relative`}>
       <button
@@ -11,10 +14,12 @@ export default function TerminalClosedChip({ bg, isDark, iconSrc, onReopen }) {
         } transition-colors shadow-lg backdrop-blur`}
         onClick={onReopen}
       >
-        <img
-          src={iconSrc}
+        <Image
+          src={finalIconSrc}
           alt="Terminal icon"
-          className="w-10 h-10"
+          width={40}
+          height={40}
+          className="rounded-xl"
           style={{
             backgroundColor: "rgba(0,0,0,0.85)",
             borderRadius: 10,
